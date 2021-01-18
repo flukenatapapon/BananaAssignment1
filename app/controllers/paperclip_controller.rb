@@ -1,0 +1,2 @@
+class PaperclipController < ApplicationController
+end

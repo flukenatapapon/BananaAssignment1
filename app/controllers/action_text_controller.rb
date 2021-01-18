@@ -1,0 +1,2 @@
+class ActionTextController < ApplicationController
+end

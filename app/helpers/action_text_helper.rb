@@ -1,0 +1,2 @@
+module ActionTextHelper
+end
