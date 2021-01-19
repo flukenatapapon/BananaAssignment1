@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<h1>New Post</h1>
+
+
+<%= render 'form', post: @post %>
+
+<form method="get" action="/posts">
+<button type="submit">Back</button> 
+</form>
