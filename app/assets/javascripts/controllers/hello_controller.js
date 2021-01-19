@@ -1,7 +1,11 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  reset() {
+  // connect() {
+  //   this.element.textContent = "Hello World!"
+  // }
+
+  reset(){
     this.element.reset()
   }
 }
