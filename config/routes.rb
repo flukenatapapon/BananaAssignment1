@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :rooms do
     resources :messages
   end
+  resources :photos
   resources :welcome
   resources :posts
   root 'welcome#index' 
@@ -10,5 +11,8 @@ Rails.application.routes.draw do
   get '/paperclip', to: 'paperclip#index', as: 'paperclip'
   get '/landingpage', to: 'landing_page#index', as: 'landingpage'
   get '/posts_index', to: 'posts#index', as: 'posts_index'
+  get '/paper_index', to: 'photos#index', as: 'paper_index'
+  post "photos/new", to: "photos#new", as: "postNew"
+  post "photos/index", to: "photos#index", as: "postBack"
 
 end
