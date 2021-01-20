@@ -1,19 +1,15 @@
-<!-- Renders navigation file located at app/views/layouts/_navigation.html.erb -->
-<%= stylesheet_link_tag "paperclipStyle.css" %>
-<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'photos', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <div class="page-header"><h1 class="left">Upload Photo</h1> </div>
 <div id="flash"> 
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
-    </div>
-
-  <div class="media">
-      <%= button_to 'Upload Photo', photosNew_path , class: 'btn btn-primary' %>
-      <%= button_to 'Back', back_to_index_path , class: 'btn btn-warning' %>
   </div>
-
+<form method="get">
+  <br>
+  <button type="submit" formaction="/photos_get_new", class="btn btn-primary">Upload Photo</button> || <button type="submit" formaction="welcome", class="btn btn-warning">Back</button>
+</form>
 <div class="container-fluid">
 <div class="row">
   <% @photos.each do |photo| %>
@@ -28,3 +24,4 @@
   <% end %>
 </div>
 </div>
+<br>

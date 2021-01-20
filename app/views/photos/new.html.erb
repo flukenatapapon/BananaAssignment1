@@ -1,11 +1,4 @@
-<!-- Renders navigation file located at app/views/layouts/_navigation.html.erb -->
-<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <!-- Renders navigation file located at app/views/layouts/_navigation.html.erb -->
-    <div id="flash">
-      <% flash.each do |key, value| %>
-        <div class="flash <%= key %>"><%= value %></div>
-      <% end %>
-    </div>
+<%= stylesheet_link_tag 'photos', media: 'all', 'data-turbolinks-track': 'reload' %>
 <div class="page-header"><h1>Upload Photo</h1></div>
 
 <%= form_for @photo, html: { multipart: true } do |f| %>
@@ -38,7 +31,6 @@
         <%= f.submit 'Upload Photo', class: 'btn btn-default' %>
   </div>
 <% end %>
-
-<div class="media">
-     <%= button_to 'Back', postBack_path , class: 'btn btn-default' %>
-  </div>
+<form method="get">
+    <button type="submit" formaction="/photos", class="btn btn-primary">Back</button>
+ </form>
