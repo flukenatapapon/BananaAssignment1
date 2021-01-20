@@ -8,9 +8,11 @@
       <% end %>
     </div>
 
-<div class="media">
-  <%= button_to 'Upload Photo', postNew_path , class: 'btn btn-primary' %>
-</div>
+  <div class="media">
+      <%= button_to 'Upload Photo', postNew_path , class: 'btn btn-primary' %>
+      <%= button_to 'Back', back_to_index_path , class: 'btn btn-warning' %>
+  </div>
+
 <div class="container-fluid">
 <div class="row">
   <% @photos.each do |photo| %>
