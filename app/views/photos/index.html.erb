@@ -1,8 +1,9 @@
 <!-- Renders navigation file located at app/views/layouts/_navigation.html.erb -->
 <%= stylesheet_link_tag "paperclipStyle.css" %>
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
 <div class="page-header"><h1 class="left">Upload Photo</h1> </div>
-<div id="flash">
+<div id="flash"> 
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
