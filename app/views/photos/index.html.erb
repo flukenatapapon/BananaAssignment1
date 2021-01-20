@@ -1,0 +1,27 @@
+<!-- Renders navigation file located at app/views/layouts/_navigation.html.erb -->
+<%= stylesheet_link_tag "paperclipStyle.css" %>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="page-header"><h1 class="left">Upload Photo</h1> </div>
+<div id="flash">
+      <% flash.each do |key, value| %>
+        <div class="flash <%= key %>"><%= value %></div>
+      <% end %>
+    </div>
+
+<div class="media">
+  <%= button_to 'Upload Photo', postNew_path , class: 'btn btn-primary' %>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <% @photos.each do |photo| %>
+    <div class="col-sm-2" align="center" style="margin:20px">
+      <h4 class="media-heading"><%= photo.title %></h4>
+      <!-- Renders image -->
+      <%= link_to image_tag(photo.image.url, class: 'media-object'), photo.image.url, target: '_blank' %>
+      <!-- Button to delete image -->
+      <br>
+      <%= link_to 'Remove', photo_path(photo), class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %>
+    </div>
+  <% end %>
+</div>
+</div>
