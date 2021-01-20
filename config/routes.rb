@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get '/landingpage', to: 'landing_page#index', as: 'landingpage'
   get '/posts_index', to: 'posts#index', as: 'posts_index'
   post '/index', to: 'welcome#index', as: 'back_to_index'
-  
+  post
 end
