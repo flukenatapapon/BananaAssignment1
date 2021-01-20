@@ -1,0 +1,7 @@
+.wbody {
+    display: table-cell;
+    vertical-align: top;
+    width: 50px;
+    overflow: hidden;
+    zoom: 1;
+}

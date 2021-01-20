@@ -5,6 +5,6 @@ export default class extends Controller {
   //   this.element.textContent = "Hello World!"
   // }
   reset() {
-    this.element.reset()
+    this.element.reset();
   }
 }
