@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'hotwire-rails'
 
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.2.5'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
