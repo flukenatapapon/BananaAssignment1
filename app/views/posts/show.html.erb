@@ -15,6 +15,6 @@
 <%# <%= link_to 'Back', posts_path %> 
 
 <form method="get">
-  <button type="submit" formaction="/posts/<%= @post.id %>/edit">Edit</button> 
-  <button type="submit" formaction="/posts">Back</button> 
+  <button type="submit" formaction="/posts/<%= @post.id %>/edit" class="btn btn-primary">Edit</button> 
+  || ¥<button type="submit" formaction="/posts_index" class="btn btn-warning">Back</button> 
 </form>

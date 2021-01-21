@@ -13,7 +13,13 @@ Rails.application.routes.draw do
   get '/chat_app', to: 'chat_app#index', as: 'chat_app'
   get '/paperclip', to: 'paperclip#index', as: 'paperclip'
   get '/landingpage', to: 'landing_page#index', as: 'landingpage'
+
+  #post rountes edit
   get '/posts_index', to: 'posts#index', as: 'posts_index'
+  get '/destroy_post/:id', to: 'posts#destroy', as: 'destroy_post'
+
+  #paperclip rountes edit
+  get '/destroy_photo/:id', to: 'photos#destroy', as: 'destroy_photos'
 
   get '/photos_index', to: 'photos#index', as: 'photos_index'
   post '/photos_post_index', to: 'photos#index', as: 'photos_post_index'
