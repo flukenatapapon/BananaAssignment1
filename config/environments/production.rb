@@ -1,6 +1,9 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  # Prepare the ingress controller used to receive mail
+  # config.action_mailbox.ingress = :relay
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -15,6 +18,8 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+
+  config.assets.compile = false
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).

@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   resources :posts
   resources :photos
 
+  resources :comments
+  resources :discussions
+  resources :users
+
   root 'welcome#index' 
 
   get '/action_text', to: 'action_text#index', as: 'action_text'
