@@ -34,7 +34,6 @@ gem 'redis-rails'
 # gem 'bcrypt', '~> 3.1.7'
 
 #bootstap paperclip
-gem 'bootstrap-sass'
 gem 'paperclip', "~> 5.0.0"
 
 # Use Active Storage variant
@@ -79,6 +78,4 @@ group :development do
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'bootstrap-sass'
 gem "paperclip", "~> 5.0.0"
-gem 'jquery-rails'
