@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
 # hotwire add
 gem 'hotwire-rails'
 
+
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.2.5'
 gem 'redis-namespace'
@@ -80,3 +81,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
 gem "paperclip", "~> 5.0.0"
+gem 'jquery-rails'
