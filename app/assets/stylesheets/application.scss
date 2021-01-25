@@ -12,6 +12,8 @@
  *
  */
 
+ @import "trix/dist/trix";
+ @import "./actiontext.scss";
  turbo-frame{
     display: block;
     border: 1px solid darkcyan;

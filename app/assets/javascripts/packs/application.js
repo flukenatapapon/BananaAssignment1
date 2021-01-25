@@ -16,6 +16,7 @@ import "controllers"
 require("trix")
 require("@rails/actiontext")
 
+
 // import 'bootstrap'
 // require("@rails/ujs").start()
 // require("turbolinks").start()
